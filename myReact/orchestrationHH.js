@@ -1,4 +1,4 @@
-var harp, flute, voice, percu;
+var harp, piano, voice, percu;
 
 
 
@@ -271,9 +271,9 @@ var orchestration = hh.MODULE(
 
         hh.TRAP(
           {
-            "trap546991":"trap546991",
+            "trap183046":"trap183046",
             "%location":{},
-            "%tag":"trap546991"
+            "%tag":"trap183046"
           },
           hh.FORK(
             {
@@ -369,7 +369,7 @@ var orchestration = hh.MODULE(
     	        ),
     	        hh.EXIT(
     		        {
-    		          "trap546991":"trap546991",
+    		          "trap183046":"trap183046",
     		          "%location":{},
     		          "%tag":"break"
     		        }
@@ -386,9 +386,9 @@ var orchestration = hh.MODULE(
 
         hh.TRAP(
           {
-            "trap31627":"trap31627",
+            "trap975093":"trap975093",
             "%location":{},
-            "%tag":"trap31627"
+            "%tag":"trap975093"
           },
           hh.FORK(
             {
@@ -404,16 +404,16 @@ var orchestration = hh.MODULE(
               {
                 "%location":{},
                 "%tag":"emit",
-                "fluteOUT":"fluteOUT",
+                "pianoOUT":"pianoOUT",
                 "apply":function (){
                   return ((() => {
-                    const fluteOUT = this["fluteOUT"];
+                    const pianoOUT = this["pianoOUT"];
                     return [true, 255];
                   })());
                 }
               },
               hh.SIGACCESS({
-                "signame":"fluteOUT",
+                "signame":"pianoOUT",
                 "pre":true,
                 "val":true,
                 "cnt":false
@@ -424,7 +424,7 @@ var orchestration = hh.MODULE(
     		      "%location":{},
     		      "%tag":"node",
     		      "apply":function () {
-                  gcs.informSelecteurOnMenuChange(255," flute", true);
+                  gcs.informSelecteurOnMenuChange(255," piano", true);
                 }
     		      }
     		 	  ),
@@ -453,16 +453,16 @@ var orchestration = hh.MODULE(
     	          {
     	            "%location":{},
     	            "%tag":"emit",
-    	            "fluteOUT":"fluteOUT",
+    	            "pianoOUT":"pianoOUT",
     	            "apply":function (){
     	              return ((() => {
-    	                const fluteOUT = this["fluteOUT"];
+    	                const pianoOUT = this["pianoOUT"];
     	                return [false, 255];
     	              })());
     	            }
     	          },
     	          hh.SIGACCESS({
-    	            "signame":"fluteOUT",
+    	            "signame":"pianoOUT",
     	            "pre":true,
     	            "val":true,
     	            "cnt":false
@@ -472,7 +472,7 @@ var orchestration = hh.MODULE(
     		      {
     		      "%location":{},
     		      "%tag":"node",
-    		      "apply":function () { gcs.informSelecteurOnMenuChange(255," flute", false); }
+    		      "apply":function () { gcs.informSelecteurOnMenuChange(255," piano", false); }
     		      }
     		 	),
 
@@ -484,7 +484,7 @@ var orchestration = hh.MODULE(
     	        ),
     	        hh.EXIT(
     		        {
-    		          "trap31627":"trap31627",
+    		          "trap975093":"trap975093",
     		          "%location":{},
     		          "%tag":"break"
     		        }
@@ -530,9 +530,9 @@ var orchestration = hh.MODULE(
 
       hh.TRAP(
         {
-          "trap479918":"trap479918",
+          "trap36963":"trap36963",
           "%location":{},
-          "%tag":"trap479918"
+          "%tag":"trap36963"
         },
         hh.FORK(
           {
@@ -628,7 +628,7 @@ var orchestration = hh.MODULE(
   	        ),
   	        hh.EXIT(
   		        {
-  		          "trap479918":"trap479918",
+  		          "trap36963":"trap36963",
   		          "%location":{},
   		          "%tag":"break"
   		        }
@@ -664,9 +664,9 @@ var orchestration = hh.MODULE(
 
       hh.TRAP(
         {
-          "trap244745":"trap244745",
+          "trap750561":"trap750561",
           "%location":{},
-          "%tag":"trap244745"
+          "%tag":"trap750561"
         },
         hh.FORK(
           {
@@ -762,7 +762,7 @@ var orchestration = hh.MODULE(
   	        ),
   	        hh.EXIT(
   		        {
-  		          "trap244745":"trap244745",
+  		          "trap750561":"trap750561",
   		          "%location":{},
   		          "%tag":"break"
   		        }
