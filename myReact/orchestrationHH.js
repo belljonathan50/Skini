@@ -1,4 +1,4 @@
-var harp, flute, voice, percu, tick;
+var harp, flute, voice, percu;
 
 
 
@@ -193,11 +193,32 @@ var orchestration = hh.MODULE(
         hh.SEQUENCE(
          {"%location":{},"%tag":"fork"},
 
+      hh.ATOM(
+        {
+          "%location":{},
+          "%tag":"node",
+          "apply":function () {
+            DAW.cleanQueues();
+            gcs.cleanChoiceList(255);
+          }
+        }
+      ),
+
+    hh.ATOM(
+      {
+        "%location":{},
+        "%tag":"node",
+        "apply":function () {
+          DAW.putPatternInQueue('stop');
+        }
+      }
+    ),
+
   hh.ATOM(
     {
       "%location":{},
       "%tag":"node",
-      "apply":function () {console.log('intro piano');}
+      "apply":function () {console.log('intro harp flute - - - - - - - - - - - - - - - - - - ');}
     }
   ),
 
@@ -250,9 +271,9 @@ var orchestration = hh.MODULE(
 
         hh.TRAP(
           {
-            "trap449426":"trap449426",
+            "trap546991":"trap546991",
             "%location":{},
-            "%tag":"trap449426"
+            "%tag":"trap546991"
           },
           hh.FORK(
             {
@@ -307,7 +328,7 @@ var orchestration = hh.MODULE(
     	              "apply":function (){return ((() => {
     	                const tick =this["tick"];
     	                return tick.now;})());},
-    	              "countapply":function (){return 20;}
+    	              "countapply":function (){return 30;}
     	          },
     	          hh.SIGACCESS({"signame":"tick","pre":false,"val":false,"cnt":false})
     	        ),
@@ -348,7 +369,7 @@ var orchestration = hh.MODULE(
     	        ),
     	        hh.EXIT(
     		        {
-    		          "trap449426":"trap449426",
+    		          "trap546991":"trap546991",
     		          "%location":{},
     		          "%tag":"break"
     		        }
@@ -365,9 +386,9 @@ var orchestration = hh.MODULE(
 
         hh.TRAP(
           {
-            "trap245395":"trap245395",
+            "trap31627":"trap31627",
             "%location":{},
-            "%tag":"trap245395"
+            "%tag":"trap31627"
           },
           hh.FORK(
             {
@@ -422,7 +443,7 @@ var orchestration = hh.MODULE(
     	              "apply":function (){return ((() => {
     	                const tick =this["tick"];
     	                return tick.now;})());},
-    	              "countapply":function (){return 20;}
+    	              "countapply":function (){return 30;}
     	          },
     	          hh.SIGACCESS({"signame":"tick","pre":false,"val":false,"cnt":false})
     	        ),
@@ -463,7 +484,7 @@ var orchestration = hh.MODULE(
     	        ),
     	        hh.EXIT(
     		        {
-    		          "trap245395":"trap245395",
+    		          "trap31627":"trap31627",
     		          "%location":{},
     		          "%tag":"break"
     		        }
@@ -484,19 +505,9 @@ var orchestration = hh.MODULE(
     {
       "%location":{},
       "%tag":"node",
-      "apply":function () {console.log('done piano percu');}
+      "apply":function () {console.log('stop previous net - entree voix');}
     }
   ),
-
-    hh.ATOM(
-      {
-        "%location":{},
-        "%tag":"node",
-        "apply":function () {
-          DAW.putPatternInQueue('stop');
-        }
-      }
-    ),
 
       hh.ATOM(
         {
@@ -509,11 +520,19 @@ var orchestration = hh.MODULE(
         }
       ),
 
+  hh.ATOM(
+    {
+      "%location":{},
+      "%tag":"node",
+      "apply":function () {console.log('clean et voice');}
+    }
+  ),
+
       hh.TRAP(
         {
-          "trap543858":"trap543858",
+          "trap479918":"trap479918",
           "%location":{},
-          "%tag":"trap543858"
+          "%tag":"trap479918"
         },
         hh.FORK(
           {
@@ -568,7 +587,7 @@ var orchestration = hh.MODULE(
   	              "apply":function (){return ((() => {
   	                const tick =this["tick"];
   	                return tick.now;})());},
-  	              "countapply":function (){return 20;}
+  	              "countapply":function (){return 40;}
   	          },
   	          hh.SIGACCESS({"signame":"tick","pre":false,"val":false,"cnt":false})
   	        ),
@@ -609,7 +628,7 @@ var orchestration = hh.MODULE(
   	        ),
   	        hh.EXIT(
   		        {
-  		          "trap543858":"trap543858",
+  		          "trap479918":"trap479918",
   		          "%location":{},
   		          "%tag":"break"
   		        }
@@ -624,15 +643,13 @@ var orchestration = hh.MODULE(
   	    }
   	),
 
-    hh.ATOM(
-      {
-        "%location":{},
-        "%tag":"node",
-        "apply":function () {
-          DAW.putPatternInQueue('stop');
-        }
-      }
-    ),
+  hh.ATOM(
+    {
+      "%location":{},
+      "%tag":"node",
+      "apply":function () {console.log('clean et percu');}
+    }
+  ),
 
       hh.ATOM(
         {
@@ -647,9 +664,9 @@ var orchestration = hh.MODULE(
 
       hh.TRAP(
         {
-          "trap777102":"trap777102",
+          "trap244745":"trap244745",
           "%location":{},
-          "%tag":"trap777102"
+          "%tag":"trap244745"
         },
         hh.FORK(
           {
@@ -704,7 +721,7 @@ var orchestration = hh.MODULE(
   	              "apply":function (){return ((() => {
   	                const tick =this["tick"];
   	                return tick.now;})());},
-  	              "countapply":function (){return 20;}
+  	              "countapply":function (){return 40;}
   	          },
   	          hh.SIGACCESS({"signame":"tick","pre":false,"val":false,"cnt":false})
   	        ),
@@ -745,7 +762,7 @@ var orchestration = hh.MODULE(
   	        ),
   	        hh.EXIT(
   		        {
-  		          "trap777102":"trap777102",
+  		          "trap244745":"trap244745",
   		          "%location":{},
   		          "%tag":"break"
   		        }
@@ -759,6 +776,14 @@ var orchestration = hh.MODULE(
   	      "%tag":"yield"
   	    }
   	),
+
+  hh.ATOM(
+    {
+      "%location":{},
+      "%tag":"node",
+      "apply":function () {console.log('fini');}
+    }
+  ),
 
       hh.ATOM(
         {
