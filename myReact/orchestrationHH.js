@@ -271,9 +271,9 @@ var orchestration = hh.MODULE(
 
         hh.TRAP(
           {
-            "trap183046":"trap183046",
+            "trap549912":"trap549912",
             "%location":{},
-            "%tag":"trap183046"
+            "%tag":"trap549912"
           },
           hh.FORK(
             {
@@ -369,7 +369,7 @@ var orchestration = hh.MODULE(
     	        ),
     	        hh.EXIT(
     		        {
-    		          "trap183046":"trap183046",
+    		          "trap549912":"trap549912",
     		          "%location":{},
     		          "%tag":"break"
     		        }
@@ -386,9 +386,9 @@ var orchestration = hh.MODULE(
 
         hh.TRAP(
           {
-            "trap975093":"trap975093",
+            "trap557089":"trap557089",
             "%location":{},
-            "%tag":"trap975093"
+            "%tag":"trap557089"
           },
           hh.FORK(
             {
@@ -484,7 +484,7 @@ var orchestration = hh.MODULE(
     	        ),
     	        hh.EXIT(
     		        {
-    		          "trap975093":"trap975093",
+    		          "trap557089":"trap557089",
     		          "%location":{},
     		          "%tag":"break"
     		        }
@@ -530,9 +530,9 @@ var orchestration = hh.MODULE(
 
       hh.TRAP(
         {
-          "trap36963":"trap36963",
+          "trap330831":"trap330831",
           "%location":{},
-          "%tag":"trap36963"
+          "%tag":"trap330831"
         },
         hh.FORK(
           {
@@ -628,7 +628,7 @@ var orchestration = hh.MODULE(
   	        ),
   	        hh.EXIT(
   		        {
-  		          "trap36963":"trap36963",
+  		          "trap330831":"trap330831",
   		          "%location":{},
   		          "%tag":"break"
   		        }
@@ -664,9 +664,9 @@ var orchestration = hh.MODULE(
 
       hh.TRAP(
         {
-          "trap750561":"trap750561",
+          "trap786344":"trap786344",
           "%location":{},
-          "%tag":"trap750561"
+          "%tag":"trap786344"
         },
         hh.FORK(
           {
@@ -762,7 +762,7 @@ var orchestration = hh.MODULE(
   	        ),
   	        hh.EXIT(
   		        {
-  		          "trap750561":"trap750561",
+  		          "trap786344":"trap786344",
   		          "%location":{},
   		          "%tag":"break"
   		        }
