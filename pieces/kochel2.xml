@@ -1,7 +1,7 @@
 <xml xmlns="https://developers.google.com/blockly/xml">
   <variables>
     <variable id="MylcmI5W~+)m0H#dYbD4">harp</variable>
-    <variable id="jfZl-le?)2vTbMz(AmnD">flute</variable>
+    <variable id="`zrx*!#i`%2B26!M%CY3">piano</variable>
     <variable id="l:AU7UOgWVwd,4~)ik1$">voice</variable>
     <variable id="6`6q)7syJ+{H1NpsbC#3">percu</variable>
   </variables>
@@ -48,7 +48,7 @@
                                         <field name="number_of_ticks">30</field>
                                         <value name="GROUPS">
                                           <block type="variables_get" id="9xX!=xF[v{I_kF^]dXb?">
-                                            <field name="VAR" id="jfZl-le?)2vTbMz(AmnD">flute</field>
+                                            <field name="VAR" id="`zrx*!#i`%2B26!M%CY3">piano</field>
                                           </block>
                                         </value>
                                       </block>
