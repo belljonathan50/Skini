@@ -1,10 +1,10 @@
 <xml xmlns="https://developers.google.com/blockly/xml">
   <variables>
     <variable id="NZckNgPsUGPF`[)1?]MJ">myModule</variable>
-    <variable id="v/G885K)-!Ncv)7oc7@Z">tick</variable>
     <variable id="#}3K=pkBW|;;f(^-*]WW">foo</variable>
+    <variable id="v/G885K)-!Ncv)7oc7@Z">tick</variable>
   </variables>
-  <block type="hh_ORCHESTRATION" id="a-M{,,Z8QBPD6S|y-Hm7" x="204" y="75">
+  <block type="hh_ORCHESTRATION" id="a-M{,,Z8QBPD6S|y-Hm7" x="65" y="-450">
     <statement name="MODULES">
       <block type="hh_module" id="JU?FUJVF|`*Uy~s:f_ZY">
         <value name="NAME">
