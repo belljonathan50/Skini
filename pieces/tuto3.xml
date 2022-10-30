@@ -2,7 +2,7 @@
   <variables>
     <variable id="s${ep-?H7|lVi1|X{*#W">foo</variable>
   </variables>
-  <block type="hh_ORCHESTRATION" id="a-M{,,Z8QBPD6S|y-Hm7" x="101" y="65">
+  <block type="hh_ORCHESTRATION" id="a-M{,,Z8QBPD6S|y-Hm7" x="72" y="-452">
     <statement name="SIGNALS">
       <block type="hh_declare_signal" id="2{I~,=oR`tdBVYPno:+|">
         <field name="TYPE">INOUT</field>
