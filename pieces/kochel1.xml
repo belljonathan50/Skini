@@ -79,7 +79,7 @@
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="set_group_during_ticks" id="!AZM3OFO2_TO}O5pMkIn">
+                                                  <block type="set_group_during_ticks" id="!AZM3OFO2_TO}O5pMkIn" disabled="true">
                                                     <field name="user_group">255</field>
                                                     <field name="number_of_ticks">40</field>
                                                     <value name="GROUPS">
