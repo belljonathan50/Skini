@@ -1,9 +1,10 @@
 <xml xmlns="https://developers.google.com/blockly/xml">
   <variables>
-    <variable id="MylcmI5W~+)m0H#dYbD4">harp</variable>
-    <variable id="`zrx*!#i`%2B26!M%CY3">piano</variable>
+    <variable id="d~re{w@(X%2(@+w~dV:k">cello2</variable>
+    <variable id="6`6q)7syJ+{H1NpsbC#3">cello</variable>
+    <variable id="h3tj99alx*W1BtDu(Pev">violin</variable>
+    <variable id="iG[:7pk0iJLEO?]=!dG-">harp</variable>
     <variable id="l:AU7UOgWVwd,4~)ik1$">voice</variable>
-    <variable id="6`6q)7syJ+{H1NpsbC#3">percu</variable>
   </variables>
   <block type="hh_ORCHESTRATION" id="M)ZKyxG8S)|LJFqE+^ty" x="63" y="-584">
     <statement name="BODY">
@@ -38,19 +39,41 @@
                                     <field name="user_group">255</field>
                                     <field name="number_of_ticks">30</field>
                                     <value name="GROUPS">
-                                      <block type="variables_get" id="xQ{F/zs_wS.}N9~kb1/H">
-                                        <field name="VAR" id="MylcmI5W~+)m0H#dYbD4">harp</field>
+                                      <block type="variables_get" id="P/uYVr+7DxoUB/YbZ_vW">
+                                        <field name="VAR" id="6`6q)7syJ+{H1NpsbC#3">cello</field>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="set_group_during_ticks" id="n2g0Z|q:+]Yp3Y{jf]$I">
+                                      <block type="set_group_during_ticks" id=":O4jddFSc$Q2F~Vi(T0r">
                                         <field name="user_group">255</field>
                                         <field name="number_of_ticks">30</field>
                                         <value name="GROUPS">
-                                          <block type="variables_get" id="9xX!=xF[v{I_kF^]dXb?">
-                                            <field name="VAR" id="`zrx*!#i`%2B26!M%CY3">piano</field>
+                                          <block type="variables_get" id="H_ad=!Q1[enFWu]5EQVU">
+                                            <field name="VAR" id="d~re{w@(X%2(@+w~dV:k">cello2</field>
                                           </block>
                                         </value>
+                                        <next>
+                                          <block type="set_group_during_ticks" id="Ei9=W[q9%|a`+)dH|j1s" disabled="true">
+                                            <field name="user_group">255</field>
+                                            <field name="number_of_ticks">30</field>
+                                            <value name="GROUPS">
+                                              <block type="variables_get" id="hT+pgpC~v~WL*O6}@S9W">
+                                                <field name="VAR" id="h3tj99alx*W1BtDu(Pev">violin</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="set_group_during_ticks" id="z7x|W-3tIHN!X}B}-b+W" disabled="true">
+                                                <field name="user_group">255</field>
+                                                <field name="number_of_ticks">30</field>
+                                                <value name="GROUPS">
+                                                  <block type="variables_get" id="M@M-tOQJp:hSeNLx^VYB">
+                                                    <field name="VAR" id="iG[:7pk0iJLEO?]=!dG-">harp</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
                                       </block>
                                     </next>
                                   </block>
@@ -79,7 +102,7 @@
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="set_group_during_ticks" id="!AZM3OFO2_TO}O5pMkIn">
+                                                  <block type="set_group_during_ticks" id="!AZM3OFO2_TO}O5pMkIn" disabled="true">
                                                     <field name="user_group">255</field>
                                                     <field name="number_of_ticks">40</field>
                                                     <value name="GROUPS">
@@ -97,12 +120,12 @@
                                                         <next>
                                                           <block type="cleanqueues" id=":1xZVFYLJyUH;E)Qrsud">
                                                             <next>
-                                                              <block type="set_group_during_ticks" id="f,R%T$dJ5/*%!5/J)A$P">
+                                                              <block type="set_group_during_ticks" id="f,R%T$dJ5/*%!5/J)A$P" disabled="true">
                                                                 <field name="user_group">255</field>
                                                                 <field name="number_of_ticks">40</field>
                                                                 <value name="GROUPS">
                                                                   <block type="variables_get" id="tF](/x9P4YF**ze+F:Cb">
-                                                                    <field name="VAR" id="6`6q)7syJ+{H1NpsbC#3">percu</field>
+                                                                    <field name="VAR" id="6`6q)7syJ+{H1NpsbC#3">cello</field>
                                                                   </block>
                                                                 </value>
                                                                 <next>
@@ -157,5 +180,8 @@
         </next>
       </block>
     </statement>
+  </block>
+  <block type="variables_get" id="|LGRm=.tCLJQMy{!E2lb" disabled="true" x="666" y="-300">
+    <field name="VAR" id="d~re{w@(X%2(@+w~dV:k">cello2</field>
   </block>
 </xml>
